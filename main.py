@@ -2,7 +2,7 @@ import time
 import sys
 from body import WIDTH, HEIGHT, G, DT, N_BODIES  # Import constants from Part 1
 from simulation_cuda import SimulationCUDA  # Import from Part 2
-from visualization import Visualization  # Import from Part 3
+from ui import Visualization  # Import from Part 3
 
 def main():
     """Main function to run the N-Body simulation."""
