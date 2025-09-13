@@ -1,7 +1,6 @@
 import pygame
 from typing import List, Dict
-from body import Body, WIDTH, HEIGHT  # Import Body and constants from Part 1
-
+from body import Body, WIDTH, HEIGHT, N_BODIES # Import Body and constants from Part 1
 class Visualization:
     """Handles Pygame visualization and event handling for the N-Body simulation."""
     
@@ -14,7 +13,7 @@ class Visualization:
         self.font = pygame.font.SysFont('Arial', 16)
         
         # Pre-render static text
-        self.bodies_text = self.font.render(f"Bodies: {10}", True, (255, 255, 255))  # N_BODIES hardcoded for now
+        self.bodies_text = self.font.render(f"Bodies: {N_BODIES}", True, (255, 255, 255))  # N_BODIES hardcoded for now
         self.fps_prefix = self.font.render("FPS: ", True, (255, 255, 255))
         self.ms_prefix = self.font.render("Avg: ", True, (255, 255, 255))
         self.ms_suffix = self.font.render(" ms", True, (255, 255, 255))
